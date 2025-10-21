@@ -1,6 +1,6 @@
 实验中遇到的问题
 ====
-#问题1：华为云连接timeout  
+# 问题1：华为云连接timeout  
 
 <img width="415" height="56" alt="image" src="https://github.com/user-attachments/assets/848a3b7b-a8ca-48ac-bed9-a9fed4bc4ce3" />  
 
@@ -16,4 +16,4 @@
 
 <img width="386" height="245" alt="image" src="https://github.com/user-attachments/assets/f45bb396-f4f9-4830-85ed-cc6709eced12" />  
 
-#问题2：
+# 问题2：
