@@ -24,5 +24,25 @@
 
 结果：成功编译  
 
+## 问题3：编译test2-1.c时报错  
+
+<img width="416" height="79" alt="image" src="https://github.com/user-attachments/assets/d780b5a8-fa64-45cd-a374-e8a5a4acad7e" />  
+
+原因&解决办法：在编译时没有链接到 pthread 库，修改编译命令为：gcc test2-1.c -o tets2-1 -lpthread  
+
+结果：成功编译  
+
+## 问题4：编译test2-3.c时报错  
+
+<img width="415" height="195" alt="image" src="https://github.com/user-attachments/assets/fac7c8b4-6487-488a-8d00-5a826a2f8236" />  
+
+原因&解决办法：pid 和 pid1 需声明为全局变量，否则子线程函数 pt1、pt2 无法访问（局部变量仅在声明的函数内有效）。
+
+结果：成功编译  
+
+## 问题5：
+
+
+
 
 
