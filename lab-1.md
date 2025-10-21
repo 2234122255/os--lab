@@ -30,6 +30,8 @@
 
 原因&解决办法：在编译时没有链接到 pthread 库，修改编译命令为：`gcc test2-1.c -o tets2-1 -lpthread`。  
 
+方法来源：询问豆包。  
+
 结果：成功编译  
 
 ## 问题4：编译test2-3.c时报错  
@@ -38,6 +40,8 @@
 
 原因&解决办法：pid 和 pid1 需声明为全局变量，否则子线程函数 pt1、pt2 无法访问（局部变量仅在声明的函数内有效）。
 
+方法来源：询问豆包。  
+
 结果：成功编译  
 
 ## 问题5：编译test3-1.c时报错  
@@ -45,6 +49,8 @@
 <img width="455" height="132" alt="image" src="https://github.com/user-attachments/assets/c70ae1e8-9457-479e-ae0f-8f5d1dd8f28a" />  
 
 原因&解决办法：①函数签名不匹配：pthread_create期待的函数类型是`void*(*）（void*)`,但我的add和sub函数的参数是spinlock_t*类型，需修改add、sub函数的参数为void*类型，并在函数内部进行强制类型转换；②编译时未链接到pthread库，应修改编译命令为：`gcc test3-1.c -o tets3-1 -lpthread`。  
+
+方法来源：询问豆包。  
 
 结果：成功编译  
 
