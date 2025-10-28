@@ -55,6 +55,23 @@
 
 结果：成功编译  
 
+## 问题6：无法正常安装git  
+
+<img width="415" height="53" alt="image" src="https://github.com/user-attachments/assets/aeb6dd2c-05da-40ba-86db-03af9443c318" />  
+
+原因&解决办法：①openssh 包冲突（无法同时安装两个版本），需跳过有冲突的包；②GPG 签名检查失败（包没有签名），需禁用GPG检查。  
+
+修改命令为`yum install -y git --skip-broken --nogpgcheck`  
+
+来源：询问deepseek  
+
+结果：Git成功安装。  
+
+<img width="151" height="25" alt="image" src="https://github.com/user-attachments/assets/8e83edc0-8f76-4a04-9b8b-c7af2bd324aa" />  
+
+
+
+
 
 
 
